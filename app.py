@@ -6,15 +6,15 @@ from prompts import DEFAULT_PROMPTS
 
 
 st.set_page_config(
-    page_title="JobGPT",
+    page_title="Peludito GPT",
     page_icon="💼",
     layout="centered",
 )
 
 
-APP_TITLE = "💼 JobGPT"
+APP_TITLE = "💼 Peludito GPT"
 APP_DESCRIPTION = (
-    "Agente conversacional para búsqueda laboral, CV, entrevistas "
+    "Agente conversacional esponjoso para búsqueda laboral, CV, entrevistas "
     "y posicionamiento profesional."
 )
 
@@ -41,7 +41,7 @@ def reset_conversation():
         {
             "role": "assistant",
             "content": (
-                "Hola, soy JobGPT. Puedo ayudarte a mejorar tu búsqueda laboral. "
+                "Hola, soy Peludito GPT. Puedo ayudarte a mejorar tu búsqueda laboral. "
                 "Para empezar, cuéntame brevemente: ¿qué tipo de puesto buscas, "
                 "en qué país o ciudad, y cuál es tu experiencia principal?"
             ),
@@ -131,6 +131,8 @@ with st.sidebar:
         options=[
             "gpt-4o-mini",
             "gpt-4o",
+            "gpt-5-mini",
+            "gpt-5",
         ],
         index=0,
     )
