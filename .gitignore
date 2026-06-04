@@ -1,10 +1,95 @@
-# Python-generated files
+# =========================
+# Secrets / API keys
+# =========================
+.env
+.env.*
+!.env.example
+
+.streamlit/secrets.toml
+.streamlit/secrets.toml.local
+!.streamlit/secrets.toml.example
+.streamlit/secrets.toml
+
+# =========================
+# User data / sensitive files
+# =========================
+data/
+uploads/
+uploaded_files/
+history/
+histories/
+logs/
+tmp/
+temp/
+cache/
+exports/
+
+*.db
+*.sqlite
+*.sqlite3
+*.jsonl
+*.log
+
+
+# =========================
+# CVs / documents / personal files
+# =========================
+*.pdf
+*.docx
+*.doc
+*.txt
+*.rtf
+*.odt
+
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.heic
+
+*.csv
+*.xlsx
+*.xls
+
+
+# =========================
+# Python
+# =========================
 __pycache__/
-*.py[oc]
+*.py[cod]
+*$py.class
+
+.venv/
+venv/
+env/
+ENV/
+
+.ipynb_checkpoints/
+
+
+# =========================
+# Streamlit / local state
+# =========================
+.streamlit/config.toml.local
+
+
+# =========================
+# OS files
+# =========================
+.DS_Store
+Thumbs.db
+
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+
+
+# =========================
+# Build / packaging
+# =========================
 build/
 dist/
-wheels/
-*.egg-info
-
-# Virtual environments
-.venv
+*.egg-info/
